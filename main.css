@@ -1,0 +1,31 @@
+.login-input{
+    display: flex;
+    flex-direction: column;
+}
+.login-input{
+    justify-content: space-around;
+    align-items: center;
+}    
+
+.login-input{
+    display: flex;
+    flex-direction: column;
+}
+.login-intro{
+      display: flex;
+      flex-wrap: wrap;
+      width:200px;
+}
+.login-info{
+    border:2.5px solid black;
+    padding:15px;
+}
+
+  #login,#password{
+      width:150px;
+ }
+  #submit-button{
+    margin:15px;
+ }
+
+  
