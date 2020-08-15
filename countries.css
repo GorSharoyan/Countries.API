@@ -7,9 +7,13 @@
 .countries-info{
     border: 2px solid gray;
 }
-.table-head{
+/* .table-head{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     position: relative;
+} */
+.flag{
+    width:75px;
+    height:50px;
 }

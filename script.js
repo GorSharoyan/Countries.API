@@ -3,14 +3,14 @@ let password = document.querySelector("#password");
 let submitButton = document.querySelector("#submit-button");
 let body = document.querySelector("body");
 
-localStorage.setItem("login", "Gor");
-localStorage.setItem("password", 123);
 
 submitButton.addEventListener("click", (event) => {
   event.preventDefault();
 
-  if (passValidation(login, password)) {
+  if (isValid(login, password)) {
     console.log("passed!!!");
+    login.value = "";
+    password.value = "";
     window.location.href='./countries.html';
   } else {
     getError()
@@ -29,14 +29,7 @@ function getError() {
     body.append(errorMessage);
 }
 
-function passValidation(login, password) {
-  
-  if (
-    login.value === localStorage.getItem("login") &&
-    password.value === localStorage.getItem("password")
-  ) {
-    login.value = "";
-    password.value = "";
-    return true;
-  }
+function isValid(login, password) {
+    
+    return login.value.length > 5 && password.value.length > 5;
 }
