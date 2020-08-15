@@ -1,0 +1,16 @@
+.countries-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    align-items: baseline;
+}
+.countries-info{
+    border: 2px solid gray;
+}
+.table-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+}

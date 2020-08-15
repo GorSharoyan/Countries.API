@@ -11,6 +11,7 @@ submitButton.addEventListener("click", (event) => {
 
   if (passValidation(login, password)) {
     console.log("passed!!!");
+    window.location.href='./countries.html';
   } else {
     getError()
   }
