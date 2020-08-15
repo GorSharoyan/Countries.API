@@ -59,12 +59,37 @@ function createTableRow(countries){
             }),    
         ]),
         td({}, [
-            button({},['add']),
-            button({},['remove']),
+            button({onclick:() => addToFavourites(country)},['add']),
+            button({onclick: () =>removeFromFavourites(country)},['remove']),
         ])
      ])))
     
         table.append(tableBody)
+    }
+
+    function addToFavourites(country) {
+        console.log('aaaaaaaaaaaaaaaaaaaa')
+
+        if(localStorage.getItem('favourites') === null){
+            localStorage.setItem('favourites',JSON.stringify([country]));
+        }else{
+            let favourites = JSON.parse(localStorage.getItem('favourites'));
+            if(favourites.every(c => c.name !== country.name)){
+                favourites.push(country);
+                localStorage.setItem('favourites',JSON.stringify(favourites));
+            }
+         
+    }
+}
+       
+   
+
+    function removeFromFavourites (country) {
+        let favourites = JSON.parse(localStorage.getItem('favourites'));
+        if(favourites.some(c => c.name === country.name)){
+            const newFavs = favourites.filter(c => c.name !== country.name);
+           localStorage.setItem('favourites',JSON.stringify(newFavs));
+        }
     }
     // ])));
     // countries.forEach( country => {
