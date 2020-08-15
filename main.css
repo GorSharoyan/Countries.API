@@ -27,5 +27,14 @@
   #submit-button{
     margin:15px;
  }
+ .error-message{
+     font:12px;
+ }
+ body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+ }
 
   
