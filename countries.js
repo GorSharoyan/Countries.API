@@ -64,9 +64,8 @@ function createTableRow(countries){
         table.append(tableBody)
     }
 
+    
     function addToFavourites(country) {
-        console.log('aaaaaaaaaaaaaaaaaaaa')
-
         if(localStorage.getItem('favourites') === null){
             localStorage.setItem('favourites',JSON.stringify([country]));
         }else{

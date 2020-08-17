@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css"/>
     <title>Favourites</title>
 </head>
-
+<nav class='countries-info'>
+    <a href="./countries.html"><h1>Countries Info</h1></a>
+    <a href="./favourites.html"><h1>Favourites</h1></a>
+    <input id='search-input' placeholder="country name">
+    <button id='search-button'>Search</button>
+</nav>
 <body>
-    <table clas="favourites-table">
+    <table>
+        <thead class='table-head'>
+            <th><h2>Country</h2></th>
+            <th><h2>Capital</h2></th>
+            <th><h2>Flag</h2></th>
+            <th><h2>Add/Remove</h2></th>
+        </thead>
     </table>
-    
 </body>
+<script  src='./favourites.js'></script>
 </html>
