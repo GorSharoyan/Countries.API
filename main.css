@@ -7,3 +7,8 @@
     justify-content: space-around;
     align-items: center;
  } */
+main{
+ background: url('./assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size: 1347px,629px;
+}
