@@ -1,14 +1,19 @@
 @import url("./css/index.css");
 @import url("./css/countries.css");
 
-/* body{
+body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
- } */
-main{
- background: url('./assets/background.jpg');
-  background-repeat: no-repeat;
-  background-size: 1347px,629px;
+
+    background: url('./assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 1347px,629px;
+    background-color: transparent ;
+ }
+
+
+footer {
+  margin-top:250px;
 }
