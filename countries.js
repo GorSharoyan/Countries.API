@@ -56,8 +56,8 @@ function createTableRow(countries){
             }),    
         ]),
         td({classList:['country-cell']}, [
-            button({onclick:() => addToFavourites(country)},['+']),
-            button({onclick: () =>removeFromFavourites(country)},['-']),
+            button({onclick:() => addToFavourites(country)},['✓']),
+            button({onclick: () =>removeFromFavourites(country)},['X']),
         ])
      ])))
     

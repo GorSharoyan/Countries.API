@@ -52,3 +52,9 @@
      font:12px;
      color: red;
  }
+ main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+ }

@@ -6,6 +6,11 @@
 }
 .countries-info{
     border: 2px solid gray;
+    padding:15px;
+    border-radius: 15px;
+}
+.nav-item{
+    border: 15px;
 }
 /* .table-head{
     display: flex;
