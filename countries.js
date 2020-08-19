@@ -46,18 +46,18 @@ async function getCountriesInfo(){
 function createTableRow(countries){
 
     const tableBody = tbody({}, countries.map(country =>
-     tr({}, [
-        td({}, [country.name]),
-        td({}, [country.capital]),
-        td({}, [
+     tr({classList:['country-block']}, [
+        td({classList:['country-cell']}, [country.name]),
+        td({classList:['country-cell']}, [country.capital]),
+        td({classList:['country-cell']}, [
             img({
                 src:country.flag,
-                classList:['flag'],
+                classList:['country-cell'],
             }),    
         ]),
-        td({}, [
-            button({onclick:() => addToFavourites(country)},['add']),
-            button({onclick: () =>removeFromFavourites(country)},['remove']),
+        td({classList:['country-cell']}, [
+            button({onclick:() => addToFavourites(country)},['+']),
+            button({onclick: () =>removeFromFavourites(country)},['-']),
         ])
      ])))
     
@@ -79,7 +79,9 @@ function createTableRow(countries){
 }
        
    function removeFromFavourites (country) {
+
         let favourites = JSON.parse(localStorage.getItem('favourites'));
+
         if(favourites.some(c => c.name === country.name)){
             const newFavs = favourites.filter(c => c.name !== country.name);
            localStorage.setItem('favourites',JSON.stringify(newFavs));
