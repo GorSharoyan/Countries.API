@@ -1,5 +1,5 @@
 import { createTableRow } from './dom.helpers/createTableRow';
-import [addToFavourites,removeFromFavourites] from './countries.js'
+import [addToFavourites,removeFromFavourites] from './countries.js';
 
 let searchInput =document.querySelector('#search-input');
 let searchBtn=document.querySelector('#search-button');
@@ -8,4 +8,4 @@ let favourites =JSON.parse(localStorage.getItem("favourites"));
 
 
 
-    createTableRow(table,favourites);
+createTableRow(table,favourites);
