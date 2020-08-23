@@ -2,6 +2,8 @@ import { createTableRow } from './dom.helpers/createTableRow.js';
 import  [span, div, tr, td, button, tbody,img] from './dom.helpers/createTableRow.js';
 import { BASE_URL } from './dom.helpers/constants/BASE_URL.js';
 
+import { BASE_URL } from "./dom.helpers/constants/BASE_URL";
+
 let searchInput =document.querySelector('#search-input');
 let searchBtn=document.querySelector('#search-button');
 let table=document.querySelector('table');
@@ -22,7 +24,7 @@ function countrySearch(){
 }
 
 async function getCountriesInfo(){
-    let response=await fetch (`${BASE_URL}`);
+    let response=await fetch (BASE_URL);
     let countries=await response.json();
     console.log(countries);
     createTableRow(table,countries)
