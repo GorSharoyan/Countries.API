@@ -1,4 +1,5 @@
 import { element } from './element.js';
+import {addToFavourites,removeFromFavourites} from '../countries.js';
 
 
 export const [span, div, tr, td, button, tbody,img] = [

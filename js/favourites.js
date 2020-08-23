@@ -1,5 +1,4 @@
 import { createTableRow } from './dom.helpers/createTableRow';
-import [addToFavourites,removeFromFavourites] from './countries.js';
 
 let searchInput =document.querySelector('#search-input');
 let searchBtn=document.querySelector('#search-button');
