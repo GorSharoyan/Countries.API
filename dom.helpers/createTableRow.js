@@ -1,4 +1,5 @@
-import { element } from './dom.helpers/element.js';
+import { element } from './element.js';
+
 
 export const [span, div, tr, td, button, tbody,img] = [
     'span', 'div', 'tr', 'td', 'button', 'tbody','img'

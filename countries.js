@@ -1,8 +1,6 @@
-import { createTableRow } from './dom.helpers/createTableRow.js';
-import  [span, div, tr, td, button, tbody,img] from './dom.helpers/createTableRow.js';
-import { BASE_URL } from './dom.helpers/constants/BASE_URL.js';
+import  {createTableRow, span, div, tr, td, button, tbody,img} from './dom.helpers/createTableRow.js';
 
-import { BASE_URL } from "./dom.helpers/constants/BASE_URL";
+import { BASE_URL } from "./dom.helpers/constants/BASE_URL.js";
 
 let searchInput =document.querySelector('#search-input');
 let searchBtn=document.querySelector('#search-button');
