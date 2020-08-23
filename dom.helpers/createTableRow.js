@@ -8,8 +8,8 @@ export const [span, div, tr, td, button, tbody,img] = [
 export function createTableRow(parent,countries){
 
     let tableBody = tbody({}, countries.map(country =>
-     tr({}, [
-        td({}, [country.name]),
+     tr({classList:["table-row"]}, [
+        td({classList:['coutry-cell']}, [country.name]),
         td({}, [country.capital]),
         td({}, [
             img({
