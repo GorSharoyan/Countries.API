@@ -10,7 +10,6 @@ let table=document.querySelector('table');
 async function getCountriesInfo(){
     let response=await fetch (BASE_URL);
     let countries=await response.json();
-    console.log(countries);
     createTableRow(table,countries)
 };
 
