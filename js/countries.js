@@ -6,19 +6,6 @@ let searchBtn=document.querySelector('#search-button');
 let table=document.querySelector('table');
 
 
-//Finsih searchBtn
-
-searchBtn.addEventListener('click',(event)=>{
-    event.preventDefault();
-    
-        countrySearch(searchInput.value);
-        searchInput.value='';
-
-});
-
-function countrySearch(){
-    //some code 
-}
 
 async function getCountriesInfo(){
     let response=await fetch (BASE_URL);

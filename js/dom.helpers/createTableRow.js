@@ -18,7 +18,7 @@ export function createTableRow(parent,countries){
                 classList:['flag'],
             }),    
         ]),
-        td({{classList:['coutry-cell']}, [country.capital]),
+        td({classList:['coutry-cell']}, [country.capital]),
         td({}, [
             button({onclick:() => addToFavourites(country)},['add']),
             button({onclick: () =>removeFromFavourites(country)},['remove']),
