@@ -11,13 +11,14 @@ export function createTableRow(parent,countries){
     let tableBody = tbody({}, countries.map(country =>
      tr({classList:["table-row"]}, [
         td({classList:['coutry-cell']}, [country.name]),
-        td({}, [country.capital]),
-        td({}, [
+        td({classList:['coutry-cell']}, [country.capital]),
+        td({classList:['coutry-cell']}, [
             img({
                 src:country.flag,
                 classList:['flag'],
             }),    
         ]),
+        td({{classList:['coutry-cell']}, [country.capital]),
         td({}, [
             button({onclick:() => addToFavourites(country)},['add']),
             button({onclick: () =>removeFromFavourites(country)},['remove']),
